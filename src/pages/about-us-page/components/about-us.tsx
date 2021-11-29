@@ -1,4 +1,4 @@
-const AboutUs = () => {
+const AboutUs:React.FC = () => {
     return (
         <section>
             <h2>About us</h2>

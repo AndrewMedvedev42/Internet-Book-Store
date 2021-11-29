@@ -1,6 +1,4 @@
-import Section from "react-desktop/src/ListView/macOs/Section"
-
-const DoscountPage = () => {
+const DoscountPage:React.FC = () => {
     return (
         <section>
             <section>

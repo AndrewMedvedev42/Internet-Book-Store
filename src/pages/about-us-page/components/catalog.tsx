@@ -1,6 +1,4 @@
-
-
-const Catalog = () => {
+const Catalog:React.FC = () => {
     return (
         <section>
             <aside>

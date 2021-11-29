@@ -1,7 +1,7 @@
 import NavigationBar from "./components/navigation-bar";
-import AboutUsPage from "./pages/about-us-page";
+import AboutUsPage from "./pages/about-us-page/about-us-page";
 import Footer from "./components/footer";
-import DoscountPage from "./pages/discount-page";
+import DoscountPage from "./pages/discount-page/discount-page";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {

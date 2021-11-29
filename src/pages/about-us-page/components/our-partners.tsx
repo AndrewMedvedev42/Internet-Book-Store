@@ -1,4 +1,4 @@
-const OurPartners = () => {
+const OurPartners:React.FC = () => {
     return (
         <section>
             <h2>Our Partners</h2>
