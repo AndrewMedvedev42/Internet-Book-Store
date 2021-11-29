@@ -1,6 +1,12 @@
 const AboutUs = () => {
     return (
-        <h1>Main Stock</h1>
+        <section>
+            <h2>About us</h2>
+            <article>
+                <p></p>
+                <p></p>
+            </article>
+        </section>
     )
 }
 

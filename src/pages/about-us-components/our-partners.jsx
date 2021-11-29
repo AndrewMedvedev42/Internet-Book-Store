@@ -1,6 +1,13 @@
 const OurPartners = () => {
     return (
-        <h1>Our Partners</h1>
+        <section>
+            <h2>Our Partners</h2>
+            <ul>
+                <li>partner</li>
+                <li>partner</li>
+                <li>partner</li>
+            </ul>
+        </section>
     )
 }
 
