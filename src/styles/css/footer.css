@@ -1,0 +1,15 @@
+.footer {
+  color: white;
+  padding: 25px;
+  background: #2C2C2C; }
+  .footer .navigation-section {
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly; }
+    .footer .navigation-section article h4 {
+      font-size: 18px;
+      font-weight: 700; }
+    .footer .navigation-section article ul li {
+      list-style: none; }
+  .footer .copyright {
+    text-align: center; }

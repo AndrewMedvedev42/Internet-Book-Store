@@ -1,7 +1,7 @@
 const Footer:React.FC = () => {
     return (
-        <section>
-            <article>
+        <section className="footer">
+            <article className="navigation-section">
                 <article>
                     <h4>Logo</h4>
                     <ul>
@@ -30,8 +30,7 @@ const Footer:React.FC = () => {
                     </ul>
                 </article>
             </article>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <article className="copyright">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </article>
         </section>

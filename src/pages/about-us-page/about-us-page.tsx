@@ -4,7 +4,7 @@ import AboutUs from "./components/about-us";
 
 const AboutUsPage:React.FC = () => {
     return (
-        <section>
+        <section className="main-container">
             <Catalog/>
             <OurPartners/>
             <AboutUs/>

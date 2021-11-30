@@ -1,0 +1,20 @@
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+  background-color: white; }
+  .navigation-bar nav {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly; }
+    .navigation-bar nav a {
+      margin: 0px 10px;
+      transition: 0.5s;
+      padding: 1rem;
+      border-radius: 2rem; }
+    .navigation-bar nav .Link {
+      color: #2C2C2C; }
+    .navigation-bar nav .selected-tab {
+      color: #FF8A50; }

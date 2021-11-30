@@ -1,0 +1,25 @@
+.footer{
+    color: white;
+    // width: 100%;
+    padding:25px ;
+    background: #2C2C2C;
+    .navigation-section{
+        margin:40px;
+        display: flex;
+        justify-content: space-evenly;
+        article{
+            h4{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+    }
+}

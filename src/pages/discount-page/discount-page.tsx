@@ -1,6 +1,6 @@
 const DoscountPage:React.FC = () => {
     return (
-        <section>
+        <section className="main-container">
             <section>
                 <input type="text" />
                 <button>Row</button>
