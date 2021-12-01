@@ -4,9 +4,11 @@ import AboutUsPage from "./pages/about-us-page/about-us-page";
 import DeliveryPage from "./pages/delivery-page/delivery-page";
 import DoscountPage from "./pages/discount-page/discount-page";
 import ContactsPage from "./pages/contact-us-page/contacts-page";
+import BookPage from "./pages/book-page/book-page";
 import Footer from "./components/footer";
 //Styles
 import "./styles/css/index.css";
+import "./styles/css/elements.css";
 import "./styles/css/footer.css"
 
 
@@ -33,6 +35,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/payment" element={<ContactsPage/>}/>
+      </Routes>
+      <Routes>
+        <Route path="/book/:id" element={<BookPage/>}/>
       </Routes>
     </section>
     <Footer/>

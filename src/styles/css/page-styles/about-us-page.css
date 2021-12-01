@@ -1,0 +1,10 @@
+.catalog-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .catalog-section .search-section {
+    width: 80%; }
+    .catalog-section .search-section ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
