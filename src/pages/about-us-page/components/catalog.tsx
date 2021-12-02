@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import { useEffect, useState } from "react"
 import "../../../styles/css/page-styles/about-us-page.css"
+import BookSlot from "../../../components/book-slot";
 
 const Catalog:React.FC = () => {
     const [searchValue, setSearchValue] = useState('christmas')
@@ -29,20 +30,8 @@ const Catalog:React.FC = () => {
                     {
                         bookCollection && (                        
                                 bookCollection.map((item)=>{
-                                const {volumeInfo, saleInfo} = item
                                 return <Link key={item.id} to={`/book/${item.id}`}>
-                                             <li className="book-card">
-                                                {
-                                                    volumeInfo.imageLinks.smallThumbnail ? (
-                                                        <img src={`${volumeInfo.imageLinks.smallThumbnail}`} alt={volumeInfo.title}/>
-                                                    ):<img src="#" alt="img"/>
-                                                }
-                                                <h3>{volumeInfo.title}</h3>
-
-                                                {saleInfo.saleability === "NOT_FOR_SALE" || saleInfo.saleability === "FREE" ?
-                                                    <p>{saleInfo.saleability.split('_').join(" ")}</p> : 
-                                                        <p>{saleInfo.listPrice.amount + " " + saleInfo.listPrice.currencyCode}</p> }
-                                            </li>                               
+                                            <BookSlot data={item}/>         
                                     </Link> 
                             }))
                     }

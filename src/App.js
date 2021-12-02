@@ -5,6 +5,7 @@ import DeliveryPage from "./pages/delivery-page/delivery-page";
 import DoscountPage from "./pages/discount-page/discount-page";
 import ContactsPage from "./pages/contact-us-page/contacts-page";
 import BookPage from "./pages/book-page/book-page";
+import Basket from "./pages/basket-page/basket-page";
 import Footer from "./components/footer";
 //Styles
 import "./styles/css/index.css";
@@ -31,7 +32,7 @@ function App() {
         <Route path="/contacts" element={<ContactsPage/>}/>
       </Routes>
       <Routes>
-        <Route path="/basket" element={<ContactsPage/>}/>
+        <Route path="/basket" element={<Basket/>}/>
       </Routes>
       <Routes>
         <Route path="/payment" element={<ContactsPage/>}/>
