@@ -1,6 +1,5 @@
 const BookSlot = (item) => {
     const {volumeInfo, saleInfo} = item.data
-    console.log(item.data);
     return (
         <li className="book-card">
         {

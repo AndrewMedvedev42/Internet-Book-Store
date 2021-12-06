@@ -1,15 +1,18 @@
 import {useState, useEffect } from "react"
+import {useSelector} from "react-redux"
 import {useLocation} from "react-router-dom"
 import {useDispatch} from "react-redux"
 import { addItemToList } from "../../redux/actions/actions";
 
-const BookPage:React.FC = () => {
-    const [book, setBook] = useState<any>()
+const BookPage = () => {
+    const [isInBasket, setIsInBasket] = useState(false)
+    const [book, setBook] = useState()
     const pathID = useLocation().pathname.split('/')[2]
 
     const dispatch = useDispatch()
 
-    const submitAction = (item_ID:string) => {
+    const submitAction = (item_ID) => {
+        setIsInBasket(true)
         dispatch(addItemToList(item_ID))
     }
 
@@ -17,10 +20,17 @@ const BookPage:React.FC = () => {
         fetch(`https://www.googleapis.com/books/v1/volumes/${pathID}`).then((res)=>{return res.json()}).then((data)=>{ setBook(data)})
     },[])
 
-    if (book) {
-        console.log(book);
-        
-    }
+    const storeBasketList = useSelector((state) => state.basket_list.list)
+
+    useEffect(()=>{
+        if (book) {
+            if (storeBasketList.some(item=>item.data.id === book.id)) {
+                setIsInBasket(true)
+            }
+        }
+    },[book])
+
+    console.log(isInBasket);
 
     return (<section className="main-container">
 
@@ -29,7 +39,12 @@ const BookPage:React.FC = () => {
                     <>
                     <article>
                         <img src={book.volumeInfo.imageLinks.large} alt={book.volumeInfo.title} />
-                        <button onClick={()=>{submitAction(book.id)}}>Basket</button>
+                        {
+                            !isInBasket ? (
+                                <button onClick={()=>{submitAction(book.id)}}>Basket</button>) 
+                                    : (<button disabled={isInBasket} >In a Basket</button>)
+                        }
+                        
                     </article>
                     <article>
                         <h3>{book.volumeInfo.title}</h3>
