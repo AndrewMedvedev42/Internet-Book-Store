@@ -6,6 +6,7 @@ import DoscountPage from "./pages/discount-page/discount-page";
 import ContactsPage from "./pages/contact-us-page/contacts-page";
 import BookPage from "./pages/book-page/book-page";
 import Basket from "./pages/basket-page/basket-page";
+import PaymentPage from "./pages/payment-page/payment-page";
 import Footer from "./components/footer";
 //Styles
 import "./styles/css/index.css";
@@ -35,7 +36,7 @@ function App() {
         <Route path="/basket" element={<Basket/>}/>
       </Routes>
       <Routes>
-        <Route path="/payment" element={<ContactsPage/>}/>
+        <Route path="/payment" element={<PaymentPage/>}/>
       </Routes>
       <Routes>
         <Route path="/book/:id" element={<BookPage/>}/>
