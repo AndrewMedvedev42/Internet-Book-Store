@@ -1,7 +1,7 @@
-const BookSlot = (item) => {
-    const {volumeInfo, saleInfo} = item.data
+const BookSlot = (data) => {
+    const {volumeInfo, saleInfo} = data.data
     return (
-        <li className="book-card">
+        <li className={`book-slot ${data.styling}`}>
         {
             volumeInfo.imageLinks ? (
                 <img src={`${volumeInfo.imageLinks.smallThumbnail}`} alt={volumeInfo.title}/>

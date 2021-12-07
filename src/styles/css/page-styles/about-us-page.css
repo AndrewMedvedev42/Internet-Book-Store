@@ -1,10 +1,50 @@
-.catalog-section {
+.section-title {
+  margin: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center; }
+
+.catalog-section .search-section {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .catalog-section .search-section {
-    width: 80%; }
-    .catalog-section .search-section ul {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
+  .catalog-section .search-section .search-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 45px;
+    border-left: #FF8A50 solid 5px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301); }
+    .catalog-section .search-section .search-input input {
+      outline: none;
+      font-size: 18px;
+      width: 90%;
+      border: none;
+      margin: 0px 12px; }
+  .catalog-section .search-section .card-slot-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+
+.partners-section article ul {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301); }
+  .partners-section article ul li img {
+    height: 80px;
+    width: 80px; }
+
+.about-us-section article article {
+  display: flex; }
+
+@media only screen and (max-width: 600px) {
+  .about-us-section article article {
+    display: flex;
+    flex-direction: column; }
+    .about-us-section article article p {
+      margin-bottom: 30px; } }

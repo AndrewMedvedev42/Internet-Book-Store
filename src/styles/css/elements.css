@@ -1,4 +1,4 @@
-.main-container {
+.page-section {
   padding-top: 6rem; }
 
 .white-container {
@@ -9,20 +9,22 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(189, 189, 189, 0.04); }
 
-.book-card {
-  width: 120px;
+.book-slot {
   margin: 10px;
   padding: 1rem;
-  list-style: none;
-  background-color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
   border-radius: 8px;
+  background-color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301); }
-  .book-card img {
+
+.card-slot {
+  width: 120px;
+  flex-direction: column;
+  align-items: center; }
+  .card-slot img {
     height: 100px; }
-  .book-card h3 {
+  .card-slot h3 {
     font-size: 14px;
     font-weight: 700;
     display: block;
