@@ -29,3 +29,7 @@ body {
   padding-bottom: 2rem; }
   .main-container .container {
     width: 80%; }
+
+#map {
+  width: 500px;
+  height: 300px; }

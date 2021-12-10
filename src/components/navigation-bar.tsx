@@ -29,18 +29,6 @@ const NavigationBar:React.FC = () => {
           </Link>
 
           <Link 
-            to="/discount"
-            className={"discount" === pathID ? "selected-tab" : "Link"}>
-            <FaPercentage size={iconSize}/>
-          </Link>
-
-          <Link 
-            to="/collection"
-            className={"collection" === pathID ? "selected-tab" : "Link"}>
-            <HiCollection size={iconSize}/>
-          </Link>
-
-          <Link 
             to="/contacts"
             className={"contacts" === pathID ? "selected-tab" : "Link"}>
             <AiFillPhone size={iconSize}/>

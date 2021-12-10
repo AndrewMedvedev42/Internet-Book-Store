@@ -30,11 +30,6 @@
             flex-flow: row wrap;
             justify-content: center;
         }
-        .row-slot-container{
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
-        }
     }
 }
 
@@ -49,12 +44,6 @@
             list-style: none;
             border-radius: 8px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
-            li{
-                img{
-                    height: 80px;
-                    width: 80px;
-                }
-            }
         }
     }
 }
@@ -80,3 +69,4 @@
         }
     }
   }
+

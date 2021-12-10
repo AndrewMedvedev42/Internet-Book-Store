@@ -6,7 +6,6 @@ import { FaSearch } from "react-icons/fa";
 
 const Catalog:React.FC = () => {
     const [searchValue, setSearchValue] = useState('christmas')
-    // const [listType, setListType] = useState("card-slot")
     const [bookCollection, setBookCollection] = useState<any[]>()
 
     useEffect(()=>{
@@ -18,25 +17,11 @@ const Catalog:React.FC = () => {
     },[searchValue])
     return (
         <section className="main-container catalog-section">
-            {/* <article>
-                <div>
-                    <h2>Slideshow</h2>
-                    <p> </p>
-                </div>
-                <img src="#" alt="hello" />
-            </article> */}
-            
             <section className="container search-section">
                 <div className="search-input">
                     <FaSearch color="#FF8A50" size={15}/>
                     <input  type="text" onChange={(e)=>{setSearchValue(e.target.value)}}/>
                 </div>
-
-                {/* <div className="slot-type-console">
-                    <span>Type:</span>
-                    <button onClick={()=>{setListType("row-slot")}}>Row</button>
-                    <button onClick={()=>{setListType("card-slot")}}>Card</button>
-                </div> */}
 
                 <ul className={`card-slot-container`}>
                     {

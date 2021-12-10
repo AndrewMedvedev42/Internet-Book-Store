@@ -9,6 +9,7 @@ import Basket from "./pages/basket-page/basket-page";
 import PaymentPage from "./pages/payment-page/payment-page";
 import Footer from "./components/footer";
 //Styles
+import 'leaflet/dist/leaflet.css';
 import "./styles/css/index.css";
 import "./styles/css/elements.css";
 import "./styles/css/footer.css"
