@@ -16,9 +16,8 @@ const Catalog:React.FC = () => {
         }
     },[searchValue])
     return (
-        <section className="main-container catalog-section">
-            <section className="container search-section">
-                <div className="search-input">
+        <section className="container search-section">
+                <div className="input-section">
                     <FaSearch color="#FF8A50" size={15}/>
                     <input  type="text" onChange={(e)=>{setSearchValue(e.target.value)}}/>
                 </div>
@@ -33,7 +32,6 @@ const Catalog:React.FC = () => {
                             }))
                     }
                 </ul>
-            </section>
         </section>
     )
 }

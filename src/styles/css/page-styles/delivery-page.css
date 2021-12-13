@@ -1,17 +1,17 @@
-.delivery-section {
+.delivery-page .delivery-article {
   padding: 20px; }
-  .delivery-section .delivery-article h3 {
+  .delivery-page .delivery-article h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 25px; }
-  .delivery-section .delivery-article p {
+  .delivery-page .delivery-article .paragraph {
     margin: 28px 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 25px; }
-  .delivery-section .delivery-message {
+  .delivery-page .delivery-article .delivery-message {
     padding: 25px;
     border: 5px solid orange; }
-    .delivery-section .delivery-message p {
+    .delivery-page .delivery-article .delivery-message .delivery-message-text {
       color: orange;
       font-size: 24px; }

@@ -1,0 +1,23 @@
+.contacts-page{
+    .container{
+        .map-and-contacts{
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            .contacts{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                .contacts-list{
+                    li{
+                        margin-top: 2rem;
+                    }
+                }
+            }
+            .map{
+                width: 70%;
+                height: 300px;
+            }
+        }
+    }
+}

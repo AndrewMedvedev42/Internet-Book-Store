@@ -1,0 +1,13 @@
+.contacts-page .container .map-and-contacts {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; }
+  .contacts-page .container .map-and-contacts .contacts {
+    width: 30%;
+    display: flex;
+    justify-content: center; }
+    .contacts-page .container .map-and-contacts .contacts .contacts-list li {
+      margin-top: 2rem; }
+  .contacts-page .container .map-and-contacts .map {
+    width: 70%;
+    height: 300px; }

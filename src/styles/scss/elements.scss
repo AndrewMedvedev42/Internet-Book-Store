@@ -1,14 +1,18 @@
-.page-section{
-	padding-top: 6rem;
+.page-title{
+    margin:30px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
 }
 
-.white-container{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 20px 20px 30px;
-	background: #FFFFFF;
-	box-shadow: 0px 4px 15px rgba(189, 189, 189, 0.04);
+.sub-title{
+    margin:30px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.page-top{
+	padding-top: 6rem;
 }
 
 .book-slot{
@@ -37,4 +41,8 @@
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
+}
+
+.container{
+	width: 70%;
 }

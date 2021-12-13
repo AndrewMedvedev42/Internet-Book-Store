@@ -1,32 +1,23 @@
-.section-title {
-  margin: 30px;
-  font-size: 30px;
-  font-weight: 900;
-  text-align: center; }
-
-.catalog-section .search-section {
+.home-page .search-section .input-section {
   display: flex;
-  justify-content: center;
-  flex-direction: column; }
-  .catalog-section .search-section .search-input {
-    display: flex;
-    align-items: center;
-    padding: 10px 45px;
-    border-left: #FF8A50 solid 5px;
-    background-color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301); }
-    .catalog-section .search-section .search-input input {
-      outline: none;
-      font-size: 18px;
-      width: 90%;
-      border: none;
-      margin: 0px 12px; }
-  .catalog-section .search-section .card-slot-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; }
+  align-items: center;
+  padding: 10px 45px;
+  border-left: #FF8A50 solid 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301); }
+  .home-page .search-section .input-section input {
+    outline: none;
+    font-size: 18px;
+    width: 90%;
+    border: none;
+    margin: 0px 12px; }
 
-.partners-section article ul {
+.home-page .search-section .card-slot-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.home-page .partners-section ul {
   background-color: white;
   padding: 10px;
   display: flex;
@@ -35,16 +26,13 @@
   list-style: none;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301); }
-  .partners-section article ul li img {
-    height: 80px;
-    width: 80px; }
 
-.about-us-section article article {
+.home-page .about-us-section article {
   display: flex; }
 
 @media only screen and (max-width: 600px) {
-  .about-us-section article article {
+  .home-page .about-us-section article {
     display: flex;
     flex-direction: column; }
-    .about-us-section article article p {
-      margin-bottom: 30px; } }
+    .home-page .about-us-section article p {
+      margin-bottom: 1rem; } }

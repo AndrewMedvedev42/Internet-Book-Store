@@ -1,16 +1,6 @@
-.section-title{
-    margin:30px;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
-}
-
-.catalog-section{
+.home-page{
     .search-section{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        .search-input{
+        .input-section{
             display: flex;
             align-items: center;
             padding: 10px 45px;
@@ -31,10 +21,8 @@
             justify-content: center;
         }
     }
-}
 
-.partners-section{
-    article{
+    .partners-section{
         ul{
             background-color: white;
             padding: 10px;
@@ -46,10 +34,8 @@
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
         }
     }
-}
 
-.about-us-section{
-    article{
+    .about-us-section{
         article{
             display: flex;
         }
@@ -57,16 +43,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .about-us-section{
-        article{
-            article{
-                display: flex;
-                flex-direction: column;
-                p{
-                    margin-bottom: 30px;
+    .home-page{
+        .about-us-section{
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        margin-bottom: 1rem;
+                    }
                 }
-            }
         }
     }
   }
-

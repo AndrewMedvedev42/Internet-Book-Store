@@ -1,8 +1,7 @@
 const AboutUs:React.FC = () => {
     return (
-        <section className="main-container about-us-section">
-            <article className="container">
-                <h2 className="section-title">About us</h2>
+            <article className="container about-us-section">
+                <h2 className="sub-title">About us</h2>
                 <article>
                     <p>Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
@@ -19,7 +18,6 @@ const AboutUs:React.FC = () => {
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </article>
             </article>
-        </section>
     )
 }
 

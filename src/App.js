@@ -2,7 +2,6 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import NavigationBar from "./components/navigation-bar";
 import AboutUsPage from "./pages/about-us-page/about-us-page";
 import DeliveryPage from "./pages/delivery-page/delivery-page";
-import DoscountPage from "./pages/discount-page/discount-page";
 import ContactsPage from "./pages/contact-us-page/contacts-page";
 import BookPage from "./pages/book-page/book-page";
 import Basket from "./pages/basket-page/basket-page";
@@ -23,9 +22,6 @@ function App() {
       <NavigationBar/>
       <Routes>
         <Route path="/" element={<AboutUsPage/>}/>
-      </Routes>
-      <Routes>
-        <Route path="/discount" element={<DoscountPage/>}/>
       </Routes>
       <Routes>
         <Route path="/delivery" element={<DeliveryPage/>}/>

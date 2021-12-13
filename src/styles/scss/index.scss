@@ -18,22 +18,32 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
+	list-style: none;
 }
 
 body{
-	background-color: #FAFAFA;
+	background-color: #e6e6e6;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	padding-bottom: 2rem;
-	.container{
-		width: 80%;
-	}
+.page{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+.container{
+	width: 70%;
+	margin-bottom: 2rem;
 }
 
-#map {
-	width: 500px;
-	 height: 300px; }
+.page-top{
+	padding-top: 3rem;
+}
+
+.border-radius-25px{
+	border-radius:25px;
+}
+
+.white-block{
+	background-color: white;
+}
