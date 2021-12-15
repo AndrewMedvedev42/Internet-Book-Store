@@ -1,8 +1,9 @@
 .footer {
   color: white;
-  padding: 25px;
+  padding: 2rem;
   background: #2C2C2C; }
   .footer .navigation-section {
+    color: gray;
     margin: 40px;
     display: flex;
     justify-content: space-evenly; }

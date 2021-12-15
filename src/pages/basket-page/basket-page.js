@@ -14,7 +14,7 @@ const Basket = () => {
         dispatch(removeItemFromBasket(item_ID))
     }
 
-    return (<section className="main-container">
+    return (<section className="page page-top">
         {
             storeBasketList && (                        
                 storeBasketList.map((item)=>{

@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import { useEffect, useState } from "react"
-import "../../../styles/css/page-styles/about-us-page.css"
-import BookSlot from "../../../components/book-slot";
+import BookSlot from "../book-slot";
+import {LoadingAnimation} from "../loadingAnimation";
 import { FaSearch } from "react-icons/fa";
 
 const Catalog:React.FC = () => {
@@ -24,12 +24,12 @@ const Catalog:React.FC = () => {
 
                 <ul className={`card-slot-container`}>
                     {
-                        bookCollection && (                        
+                        bookCollection ? (                        
                                 bookCollection.map((item)=>{
                                 return <Link key={item.id} to={`/book/${item.id}`}>
                                             <BookSlot data={item} styling={"card-slot"}/>         
                                     </Link> 
-                            }))
+                            })) : <LoadingAnimation/>
                     }
                 </ul>
         </section>
